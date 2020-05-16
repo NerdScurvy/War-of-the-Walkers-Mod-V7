@@ -1,0 +1,114 @@
+<configs>
+	<append xpath="/items">	
+		
+	<item name="eggCarton12">
+		<property name="CustomIcon" value="eggCarton"/>
+		<property name="ItemTypeIcon" value="bundle"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="Stacknumber" value="10"/> <!-- STK ammobundle -->
+		<property name="Weight" value="0"/>
+		<property name="EconomicValue" value="120"/>
+		<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Delay" value="0"/>
+			<property name="Use_time" value="0"/>
+			<property name="Sound_start" value="close_garbage"/>
+			<property name="Create_item" value="foodEgg"/>
+			<property name="Create_item_count" value="12"/>
+		</property>
+	</item>
+	<item name="eggCarton4">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="40"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="4"/>		
+		</property>
+	</item>	
+	<item name="eggCarton5">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="50"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="5"/>		
+		</property>
+	</item>	
+	
+	<item name="eggCarton6">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="60"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="6"/>		
+		</property>
+	</item>	
+	<item name="eggCarton7">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="70"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="7"/>		
+		</property>
+	</item>	
+	
+	<item name="eggCarton8">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="80"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="8"/>		
+		</property>
+	</item>	
+
+	<item name="eggCarton9">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="90"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="9"/>		
+		</property>
+	</item>	
+
+	<item name="eggCarton10">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="100"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="10"/>		
+		</property>
+	</item>	
+
+	<item name="eggCarton11">	
+		<property name="Extends" value="eggCarton12"/>
+		<property name="EconomicValue" value="110"/>
+		<property class="Action0">
+			<property name="Create_item_count" value="11"/>		
+		</property>
+    </item>	
+	
+	<item name="foodNukella">
+		<property name="Tags" value="food"/>
+		<property name="CustomIcon" value="nukella"/>
+		<property name="HoldType" value="3"/>
+		<property name="DisplayType" value="food"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="300"/>
+		<property name="Stacknumber" value="10"/> <!-- STK food -->
+		<property name="Group" value="Food,Science,CFChemicals,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+			<property name="Create_item" value="drinkJarEmpty"/>
+		</property>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffRadiatedRegenPlayer"/>
+		</effect_group>
+	</item>	
+	
+	</append>	
+	
+	
+</configs>

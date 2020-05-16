@@ -1,0 +1,22 @@
+<configs>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']"> 
+		<lootgroup name="eggCarton">
+			<item name="eggCarton12"/>
+			<item name="eggCarton11"/>
+			<item name="eggCarton10"/>
+			<item name="eggCarton9"/>
+			<item name="eggCarton8"/>
+			<item name="eggCarton7"/>
+			<item name="eggCarton6"/>
+			<item name="eggCarton5"/>
+			<item name="eggCarton4"/>
+		</lootgroup>	
+	</insertAfter>
+	
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='coldfood']/item[@name='foodEgg']">
+		<item group="eggCarton" count="1"/>
+		<item name="foodNukella" count="1" prob="0.3"/>
+	</insertAfter>	
+	<remove xpath="/lootcontainers/lootgroup[@name='coldfood']/item[@name='foodEgg']"/>
+	
+</configs>

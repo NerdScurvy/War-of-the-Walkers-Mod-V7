@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English
+bodyBagBlackFull,blocks,Container,KgNone,body Bag Black
+bodyBagYellowFull,blocks,Container,KgNone,body Bag Yellow
+bodyBagPileFull,blocks,Container,KgNone,body Bag Pile
+bodyBagPileMixFull,blocks,Container,KgNone,body Bag Pile Mix
+bodyBagPairFull,blocks,Container,KgNone,body Bag Pair
+bodyBagPairYellowFull,blocks,Container,KgNone,body Bag Pair Yellow
+bodyBagPairMixedFull,blocks,Container,KgNone,body Bag Pair Mixed
+goreBlockHumanCorpseFull,blocks,Container,KgNone,gore Block Human Corpse
+goreBlockHumanBonesFull,blocks,Container,KgNone,gore Block Human Bones Full

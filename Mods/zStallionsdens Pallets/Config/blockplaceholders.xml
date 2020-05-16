@@ -1,0 +1,102 @@
+<stallionsden>
+
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletWhiteBagsBase">
+			<block name="palletWhiteBagsBaseEmpty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletWhiteBagsTile">
+			<block name="palletWhiteBagsTileEmpty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletWhiteBagsTop">
+			<block name="palletWhiteBagsTopEmpty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletWhiteBagsPartial1">
+			<block name="palletWhiteBagsPartial1Empty"/>
+		</placeholder>
+	</append>
+	
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletWhiteBagsPartial2">
+			<block name="palletWhiteBagsPartial2Empty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletWhiteBagsLoose">
+			<block name="palletWhiteBagsLooseEmpty" />
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBrownBoxesBase">
+			<block name="palletBrownBoxesBaseEmpty" prob=".66"/>
+			<block name="palletBrownBoxesBaseFull" prob=".33"/>
+		</placeholder>
+	</append>
+	
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBrownBoxesTile">
+			<block name="palletBrownBoxesTileEmpty" prob=".66"/>
+			<block name="palletBrownBoxesTileFull" prob=".33"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBrownBoxesTop">
+			<block name="palletBrownBoxesTopEmpty" prob=".66"/>
+			<block name="palletBrownBoxesTopFull" prob=".33"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBrownBoxesLoose">
+			<block name="palletBrownBoxesLooseEmpty" prob=".66"/>
+			<block name="palletBrownBoxesLooseFull" prob=".33"/>
+		</placeholder>
+	</append>
+	
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBricksBase">
+			<block name="palletBricksBaseEmpty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBricksTile">
+			<block name="palletBricksTileEmpty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBricksTop">
+			<block name="palletBricksTopEmpty"/>
+		</placeholder>
+	</append>
+	
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBricksPartial1">
+			<block name="palletBricksPartial1Empty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBricksPartial2">
+			<block name="palletBricksPartial2Empty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBricksLoose">
+			<block name="palletBricksLooseEmpty"/>
+		</placeholder>
+	</append>
+	
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBlueTarpBase">
+			<block name="palletBlueTarpBaseEmpty"/>
+		</placeholder>
+	</append>
+	<append xpath="/blockplaceholders">
+		<placeholder name="palletBlueTarpTile">
+			<block name="palletBlueTarpTileEmpty"/>
+		</placeholder>
+	</append>	
+</stallionsden>

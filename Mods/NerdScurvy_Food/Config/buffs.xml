@@ -1,0 +1,33 @@
+<configs>
+    <append xpath="/buffs">	
+
+	<buff name="buffRadiatedRegenPlayer" name_key="buffRadiatedRegenDesc" description_key="buffRadiatedRegenDesc" tooltip_key="buffRadiatedRegenDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value="2.5"/>
+
+		<effect_group>
+			<requirement name="NotHasBuff" buff="buffRadiatedRegenBlock"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="2"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" local_offset="0,-0.1,0"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh"/>
+
+			<!--
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiatedRegen">
+				<requirement name="StatComparePercCurrentToMax" stat="health" operation="GTE" value=".8"/>
+			</triggered_effect>
+			-->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" local_offset="0,-0.1,0"/>
+
+		</effect_group>
+		
+	</buff>	
+	
+	</append>
+	
+</configs>
